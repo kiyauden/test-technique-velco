@@ -138,7 +138,7 @@ Le même résultat qu'avant mais avec les références triées par **price** asc
 ### Points d'amélioration
 
 - Le tri sur les clés **price** et **sortKey** est forcément ascendant. On pourrait imaginer une clé **order**
-  optionnelle (tri ascendant par défaut) qui prends les valeurs **ASC** ou **DESC** pour choisir le sens voulu.
+  optionnelle (tri ascendant par défaut) qui prend les valeurs **ASC** ou **DESC** pour choisir le sens voulu.
 - Les messages d'erreurs sont en dur dans le code. On pourrait imaginer un fichier **.properties** contenant tous ces
   messages et les rejoindre avec une clé connue dans le code.
 - Améliorer la validation du fichier envoyer. Pour l'instant, on vérifie seulement si le type mime du fichier est
