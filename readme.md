@@ -141,6 +141,7 @@ Le même résultat qu'avant mais avec les références triées par **price** asc
   optionnelle (tri ascendant par défaut) qui prend les valeurs **ASC** ou **DESC** pour choisir le sens voulu.
 - Les messages d'erreurs sont en dur dans le code. On pourrait imaginer un fichier **.properties** contenant tous ces
   messages et les rejoindre avec une clé connue dans le code.
-- Améliorer la validation du fichier envoyer. Pour l'instant, on vérifie seulement si le type mime du fichier est
+- Améliorer la validation du fichier envoyé. Pour l'instant, on vérifie seulement si le type mime du fichier est
   **text/plain**, ce qui bloquerai un PDF par exemple, mais le contenu du fichier texte envoyé n'est pas vraiment
-  validé.
+  validé. La validation des valeurs peut aussi être améliorée avec des regex, par exemple la validation du numéro de 
+  référence actuellement vérifie uniquement si il y a 10 caractères, mais pas ils sont bien des chiffres.
